@@ -1,0 +1,164 @@
+body {
+margin: 0;
+background-color: #F6F8FA;
+font-family: Arial, sans-serif;
+transition: 0.3s;
+}
+
+.bg-header-main {
+background-color: #24292F;
+color: white;
+text-align: center;
+}
+
+.bg-header-main h1 {
+margin: 0;
+font-family: cursive;
+font-size: 72px;
+transition: 0.3s;
+}
+
+.bg-header-main h1:hover {
+    transform: translateY(-5px);
+}
+
+.bg-header-main button {
+background-color: transparent;
+color: white;
+border: 2px solid white;
+border-radius: 20px;
+padding: 7px 18px;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.bg-header-main button:hover {
+background-color: white;
+color: #24292F;
+}
+
+.bg-nav {
+background-color: #0969DA;
+text-align: center;
+}
+
+.bg-nav {
+display: flex;
+justify-content: center;
+gap: 75px;
+flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+.bg-nav {
+gap: 20px;
+}
+}
+
+.bg-nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-size: 24px;
+transition: 0.3s;
+}
+
+.bg-nav a:hover {
+color: #B6D7FF;
+transform: translateY(-5px);
+}
+
+.card {
+border: none;
+border-radius: 10px;
+overflow: hidden;
+background-color: white;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+transform: translateY(-5px);
+transition: 0.5s;
+}
+
+.card-img-top {
+height: 200px;
+object-fit: cover;
+}
+
+.card-title {
+color: #0969DA;
+font-weight: bold;
+font-size: 32px;
+transition: 0.3s;
+}
+
+.card-title:hover {
+transform: translateY(-5px);
+}
+
+.card-text {
+color: #24292F;
+font-size: 24px;
+}
+
+.row {
+margin: 20px 0;
+}
+
+footer {
+margin-top: 30px;
+}
+
+footer h5 {
+font-weight: bold;
+transition: 0.3s;
+}
+
+footer h5:hover {
+    transform: translateY(-5px);
+}
+
+footer p {
+color: #B6D7FF;
+transition: 0.3s;
+}
+
+footer p:hover {
+    transform: translateY(-5px);
+}
+
+body.dark-mode {
+background-color: #0D1117;
+color: white;
+}
+
+body.dark-mode .card {
+background-color: #161B22;
+color: white;
+}
+
+body.dark-mode .card-title {
+color: #58A6FF;
+}
+
+body.dark-mode .card-text {
+color: #C9D1D9;
+}
+
+body.dark-mode .bg-header-main {
+background-color: #161B22;
+}
+
+body.dark-mode .bg-nav {
+background-color: #21262D;
+}
+
+body.dark-mode footer {
+background-color: #161B22;
+}
+
+body.dark-mode .card, body.dark-mode .bg-header-main, body.dark-mode .bg-nav, body.dark-mode footer {
+transition: 0.3s;
+}

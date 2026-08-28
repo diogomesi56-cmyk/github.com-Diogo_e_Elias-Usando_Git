@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diogo e Elias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo1.css">   
+</head>
+<body>
+ <!-- CABEÇALHO -->
+<header class="container-fluid bg-header-main py-3">
+    <h1>Git & GitHub</h1>
+<button class="btn" onclick="toggleDarkMode()">
+    Alterar Modo Escuro
+</button>
+</header>
+<!-- MENU -->
+<nav class="container-fluid bg-nav py-3">
+    <a href="janja.html" class="text-uppercase mx-5">Janja</a>
+    <a href="formulario.html" class="text-uppercase mx-5">Formulário</a>
+    <a href="michelle.html" class="text-uppercase mx-5">Michelle</a>
+</nav>
+
+<div class="container">
+    <div class="row justify-content-center g-4">
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">O que é Git?</h5>
+                <p class="card-text"> O Git é um sistema de controle de versão distribuído, usado para registrar e acompanhar o histórico de alterações em arquivos, especialmente em códigos de programação.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">O que é Github?</h5>
+                <p class="card-text"> O GitHub é uma plataforma online de hospedagem de código-fonte e arquivos que utiliza o sistema de controle de versão Git.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">Qual a diferença entre Git e Github?</h5>
+                <p class="card-text"> O Git é o programa instalado no seu computador para guardar o histórico de alterações do seu código. Já o GitHub é o site na nuvem que armazena esses códigos e ajuda equipes a trabalhar juntas. Ou seja, o Git funciona sozinho, mas o GitHub precisa do Git.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">O que é um repositório?</h5>
+                <p class="card-text"> Um repositório é o elemento mais básico de GitHub. É um lugar onde você pode armazenar seu código, seus arquivos e o histórico de revisão de cada arquivo. Os repositórios podem ter vários colaboradores e podem ser públicos ou privados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center g-4">
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">O que é um commit?</h5>
+                <p class="card-text"> Um commit é o ato de salvar um conjunto de alterações de forma permanente em um sistema de controle de versão no Git</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">O que é um clone (git clone)?</h5>
+                <p class="card-text"> O git clone é um comando do Git usado para criar uma cópia local de um repositório remoto existente.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center g-4">
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">Quais as vantagens de utilizar controle de versões em projetos de software?</h5>
+                <p class="card-text"> Tem várias vantagens como: garantir a segurança do código, a organização do projeto e o trabalho em equipe eficiente.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
+            <div class="card-body">
+                <h5 class="card-title">Comentários acerca de git add e git ignore</h5>
+                <p class="card-text"> O comando git add prepara as alterações de um projeto para o próximo commit, enquanto o arquivo git ignore avisa ao Git quais arquivos e pastas devem ser ignorados e não rastreados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>  
+    function toggleDarkMode() {  
+        const isDark = document.body.classList.toggle('dark-mode');  
+        const logo = document.getElementById('logo');  
+
+        if (isDark) {  
+            if (logo) logo.src = 'Imagens/Logo  Panificadora Piauí Clara.png';  
+        } else {  
+            if (logo) logo.src = 'Imagens/Logo Panificadora Piauí.png';  
+        }  
+    }  
+</script>  
+
+<footer class="container-fluid bg-nav py-5 px-lg-5">  
+    <div class="row text-center text-white justify-content-center">  
+        <!-- Título -->
+        <div class="col-12 mb-2">  
+            <h5 class="text-uppercase mb-0">Git & GitHub</h5>  
+        </div>  
+
+        <!-- Linha única com todas as informações -->
+        <div class="col-12">  
+            <p class="small mb-0 text-center" style="font-size: 1.1rem; font-weight: bold;">  
+                Atividade acerca do Git & GitHub &nbsp;|&nbsp; © 2026 Desenvolvido por <strong class="text-white">Diogo & Elias (Pegadinha)</strong> (IFPI)  
+            </p>  
+        </div>  
+    </div>  
+</footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diogo e Elias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">   
+</head>
+<body>
+ <!-- CABEÇALHO -->
+<header class="container-fluid bg-header-main py-3">
+    <h1>Rosângela da Silva (Janja)</h1>
+<button class="btn" onclick="toggleDarkMode()">
+    Alterar Modo Escuro
+</button>
+</header>
+<!-- MENU -->
+<nav class="container-fluid bg-nav py-3">
+  <a href="git.html" class="text-uppercase mx-5">Questões do Git</a>
+  <a href="formulario.html" class="text-uppercase mx-5">Formulário</a>
+  <a href="michelle.html" class="text-uppercase mx-5">Michelle</a>
+</nav>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="imagens/janja.jpeg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Combate à Fome</h5>
+        <p class="card-text"> Indicada e condecorada como Campeã da Boa Vontade pela FAO (Organização das Nações Unidas para a Alimentação e a Agricultura) por sua dedicação em erradicar a fome.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/janja1.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Direitos das Mulheres</h5>
+        <p class="card-text"> Participação em atos de proteção feminina, como o lançamento de teleatendimento psicológico no SUS para mulheres vítimas de violência, além de atuar no enfrentamento ao feminicídio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/janja2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cultura e Sustentabilidade</h5>
+        <p class="card-text">Nomeada enviada especial da COP30 para mulheres e condecorada com a Grã-Cruz da Ordem do Mérito Cultural em reconhecimento ao apoio à cultura. Ela também idealizou o festival cultural associado ao G20 (conhecido como "Janjapalooza").</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/janja3.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Articulação Política e Campanhas</h5>
+        <p class="card-text">Coordenação de grandes eventos públicos, como a festa de posse presidencial de 2023, e forte engajamento em estratégias de comunicação e aproximação com eleitores nas redes sociais.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>  
+    function toggleDarkMode() {  
+        const isDark = document.body.classList.toggle('dark-mode');  
+        const logo = document.getElementById('logo');  
+
+        if (isDark) {  
+            if (logo) logo.src = 'Imagens/Logo  Panificadora Piauí Clara.png';  
+        } else {  
+            if (logo) logo.src = 'Imagens/Logo Panificadora Piauí.png';  
+        }  
+    }  
+</script>  
+
+<footer class="container-fluid bg-nav py-5 px-lg-5">  
+    <div class="row text-center text-white justify-content-center">  
+        <!-- Título -->
+        <div class="col-12 mb-2">  
+            <h5 class="text-uppercase mb-0">Panificadora Piauí</h5>  
+        </div>  
+
+        <!-- Linha única com todas as informações -->
+        <div class="col-12">  
+            <p class="small mb-0 text-center" style="font-size: 1.1rem; font-weight: bold;">  
+                Esposa do presidente Lula &nbsp;|&nbsp; 📍 Rosângela da Silva (Janja) &nbsp;|&nbsp; © 2026 Desenvolvido por <strong class="text-white">Diogo & Elias (Pegadinha)</strong> (IFPI)  
+            </p>  
+        </div>  
+    </div>  
+</footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
