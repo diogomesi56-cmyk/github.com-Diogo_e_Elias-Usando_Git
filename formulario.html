@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diogo e Elias</title>
+    <title>Votação</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">   
+    <link rel="stylesheet" href="css/formulario.css">   
 </head>
 <body>
  <!-- CABEÇALHO -->
 <header class="container-fluid bg-header-main py-3">
-    <h1>PANIFICADORA PIAUÍ</h1>
+    <h1>Formulário</h1>
 <button class="btn" onclick="toggleDarkMode()">
     Alterar Modo Escuro
 </button>
 </header>
 <!-- MENU -->
 <nav class="container-fluid bg-nav py-3">
+     <a href="git.html" class="text-uppercase mx-5">Questões do Git</a>
     <a href="janja.html" class="text-uppercase mx-5">Janja</a>
-    <a href="git.html" class="text-uppercase mx-5">Questões do Git</a>
     <a href="michelle.html" class="text-uppercase mx-5">Michelle</a>
 </nav>
 
@@ -27,16 +27,31 @@
     <div class="col-12 col-md-6">
         <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
             <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h5 class="card-title">Qual partido voce mais se identifica?
+                </h5>
+                <p class="card-text"> <form>
+                  <select name="Partido">
+                    <option>PL</option>
+                    <option>PT</option>
+                    <option>Nenhum</option>
+                    <option>Outro</option>
+                  </select>
+                </form></p>
             </div>
         </div>
     </div>
     <div class="col-12 col-md-6">
         <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
             <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h5 class="card-title">Qual possui os melhores feitos?</h5>
+                <p class="card-text"> <form>
+                  <select name="Pessoa">
+                    <option>Janja</option>
+                    <option>Michelle</option> 
+                    <option>Nenhum</option>
+                    <option>Outro</option> 
+                  </select>
+                </form></p>
             </div>
         </div>
     </div>
@@ -48,72 +63,46 @@
     <div class="col-12 col-md-6">
         <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
             <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            </div>
+                <h5 class="card-title">Em quem irá votar?</h5>
+                <p class="card-text">
+                <form>
+                  <select name="voto">
+                    <option>13</option>
+                    <option>22</option> 
+                    <option>Voto em Branco</option>
+                    <option>Voto Nulo</option> 
+                  </select>
+                </form>
+                </div>
         </div>
     </div>
     <div class="col-12 col-md-6">
         <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
             <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h5 class="card-title">Indique novas propostas de governo!</h5>
+                <p class="card-text"> <textarea placeholder="Eu queria que tivesse pena de morte pra quem estivesse roubando minha caneta na sala de aula"></textarea></p>
             </div>
         </div>
     </div>
+    <button id="button">Confirmar</button>
+    <h3 id="concluido"></h3>
 </div>
-</div>
-
-<div class="container">
-    <div class="row justify-content-center g-4">
-    <div class="col-12 col-md-6">
-        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
-            <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-6">
-        <div class="card border-info mb-3 mx-auto" style="max-width: 36rem;">
-            <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<script>  
-    function toggleDarkMode() {  
-        const isDark = document.body.classList.toggle('dark-mode');  
-        const logo = document.getElementById('logo');  
-
-        if (isDark) {  
-            if (logo) logo.src = 'Imagens/Logo  Panificadora Piauí Clara.png';  
-        } else {  
-            if (logo) logo.src = 'Imagens/Logo Panificadora Piauí.png';  
-        }  
-    }  
-</script>  
-
 <footer class="container-fluid bg-nav py-5 px-lg-5">  
     <div class="row text-center text-white justify-content-center">  
         <!-- Título -->
         <div class="col-12 mb-2">  
-            <h5 class="text-uppercase mb-0">Panificadora Piauí</h5>  
+            <h5 class="text-uppercase mb-0">Governo Ifpiense!!!</h5>  
         </div>  
 
         <!-- Linha única com todas as informações -->
         <div class="col-12">  
             <p class="small mb-0 text-center" style="font-size: 1.1rem; font-weight: bold;">  
-                Tradição, afeto e pães quentinhos • Desde 1995 &nbsp;|&nbsp; 📍 Av. Santos Dumont, Floriano - PI &nbsp;|&nbsp; ⏰ Seg a Sáb: 06h às 20h • Dom: 06h às 12h &nbsp;|&nbsp; © 2026 Desenvolvido por <strong class="text-white">Diogo & Isac</strong> (IFPI)  
+                Garanta o futuro do nosso Brasil &nbsp;|&nbsp; 📍 Desordem e Regresso &nbsp;|&nbsp; © 2026 Desenvolvido por <strong class="text-white">Diogo & Elias (Pegadinha)</strong> 
             </p>  
         </div>  
     </div>  
 </footer>  
-
+    <script src="javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
