@@ -1,164 +1,188 @@
 body {
-margin: 0;
-background-color: #F6F8FA;
-font-family: Arial, sans-serif;
-transition: 0.3s;
+  margin: 0;
+  background-color: #F8F9FC;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
 }
 
 .bg-header-main {
-background-color: #24292F;
-color: white;
-text-align: center;
+  background-color: #6A1B9A;
+  color: white;
+  text-align: center;
 }
 
 .bg-header-main h1 {
-margin: 0;
-font-family: cursive;
-font-size: 72px;
-transition: 0.3s;
+  margin: 0;
+  font-family: cursive;
+  font-size: 72px;
+  transition: 0.3s;
 }
 
 .bg-header-main h1:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .bg-header-main button {
-background-color: transparent;
-color: white;
-border: 2px solid white;
-border-radius: 20px;
-padding: 7px 18px;
-margin-top: 10px;
-cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 7px 18px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .bg-header-main button:hover {
-background-color: white;
-color: #24292F;
+  background-color: white;
+  color: #6A1B9A;
 }
 
 .bg-nav {
-background-color: #0969DA;
-text-align: center;
+  background-color: #283593;
+  text-align: center;
 }
 
 .bg-nav {
-display: flex;
-justify-content: center;
-gap: 75px;
-flex-wrap: wrap;
-}
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  flex-wrap: wrap;
+ }
 
 @media (max-width: 600px) {
-.bg-nav {
-gap: 20px;
-}
+  .bg-nav {
+   gap: 20px;
+  }
 }
 
 .bg-nav a {
-color: white;
-text-decoration: none;
-font-weight: bold;
-font-size: 24px;
-transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
 }
 
 .bg-nav a:hover {
-color: #B6D7FF;
-transform: translateY(-5px);
+  color: #F8BBD0;
+  transform: translateY(-5px);
 }
 
 .card {
-border: none;
-border-radius: 10px;
-overflow: hidden;
-background-color: white;
-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .card:hover {
-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-transform: translateY(-5px);
-transition: 0.5s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: 0.5s;
 }
 
 .card-img-top {
-height: 200px;
-object-fit: cover;
+  height: 400px;
+  object-fit: cover;
 }
 
 .card-title {
-color: #0969DA;
-font-weight: bold;
-font-size: 32px;
-transition: 0.3s;
+  color: #6A1B9A;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.3s;
 }
 
 .card-title:hover {
-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card-text {
-color: #24292F;
-font-size: 24px;
+  color: #424242;
+  font-size: 24px;
 }
 
 .row {
-margin: 20px 0;
+  margin: 20px 0;
 }
 
 footer {
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 footer h5 {
-font-weight: bold;
-transition: 0.3s;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 footer h5:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 footer p {
-color: #B6D7FF;
-transition: 0.3s;
+  color: #F8BBD0;
+  transition: 0.3s;
 }
 
 footer p:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 body.dark-mode {
-background-color: #0D1117;
-color: white;
+  background-color: #17121F;
+  color: white;
 }
 
 body.dark-mode .card {
-background-color: #161B22;
-color: white;
+  background-color: #26202E;
+  color: white;
 }
 
 body.dark-mode .card-title {
-color: #58A6FF;
+  color: #CE93D8;
 }
 
 body.dark-mode .card-text {
-color: #C9D1D9;
+  color: #E0E0E0;
 }
 
 body.dark-mode .bg-header-main {
-background-color: #161B22;
+  background-color: #45205C;
 }
 
 body.dark-mode .bg-nav {
-background-color: #21262D;
+  background-color: #171C3D;
 }
 
 body.dark-mode footer {
-background-color: #161B22;
+  background-color: #171C3D;
 }
 
-body.dark-mode .card, body.dark-mode .bg-header-main, body.dark-mode .bg-nav, body.dark-mode footer {
-transition: 0.3s;
+body.dark-mode select, body.dark-mode textarea{
+  background-color: rgb(60, 60, 60);
+  color: whitesmoke;
+}
+
+body.dark-mode .card, body.dark-mode .bg-header-main, body.dark-mode .bg-nav, body.dark-mode footer, body.dark-mode select, body.dark-mode textarea {
+  transition: 0.3s;
+}
+
+#button{
+  color: rgb(48, 48, 48);
+  margin: 6px auto;
+  background-color: white;
+  width: 30%;
+  border: 2px rgb(48, 48, 48) solid;
+  border-radius: 10px;
+  transition: 0.5s; 
+}
+#button:hover{
+  background-color: rgb(64, 255, 75);
+  border-color: darkgreen;
+  transform: scale(1.30);
+}
+
+#concluido{
+  text-align: center;
 }
